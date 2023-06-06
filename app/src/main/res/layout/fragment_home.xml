@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.comicuniverse.AllFragment.HomeFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:id="@+id/ln_search"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginBottom="5dp">
+
+           <TextView
+               android:id="@+id/ed_Search"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/border_edlogin"
+               android:gravity="center_vertical"
+               android:padding="2sp"
+               android:text="Tìm kiếm"
+               android:textSize="18sp"
+               app:drawableStartCompat="@drawable/ic_action_search" />
+       </LinearLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="190dp"
+           android:layout_margin="5dp"
+           app:cardCornerRadius="10dp">
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <androidx.viewpager.widget.ViewPager
+                   android:id="@+id/Vp_Slide"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:contentDescription="Vp_Slide"/>
+               <me.relex.circleindicator.CircleIndicator
+                   android:id="@+id/Cr_slide"
+                   android:layout_width="wrap_content"
+                   android:layout_gravity="center|bottom"
+                   android:layout_margin="3dp"
+                   android:layout_height="20dp"/>
+           </FrameLayout>
+       </androidx.cardview.widget.CardView>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/Rc_HomeComic"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+
+   </LinearLayout>
+</androidx.core.widget.NestedScrollView>

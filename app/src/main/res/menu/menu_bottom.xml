@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/action_Home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_action_home"/>
+    <item
+        android:id="@+id/action_History"
+        android:title="@string/history"
+        android:icon="@drawable/ic_action_history"
+        />
+    <item
+        android:id="@+id/action_Favorit"
+        android:title="@string/favorite"
+        android:icon="@drawable/ic_action_favoriter"
+        />
+    <item
+        android:id="@+id/action_account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_action_acc"
+        />
+    <item
+        android:id="@+id/action_admin"
+        android:title="@string/admin"
+        android:icon="@drawable/ic_action_admin"
+        />
+</menu>
